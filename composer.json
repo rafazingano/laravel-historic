@@ -16,7 +16,7 @@
     }
   ],
   "require": {
-    "developerhistoric/api-3.0-php": "^1.0"
+    
   },
   "autoload": {
     "psr-4": {
