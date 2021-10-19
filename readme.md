@@ -1,6 +1,6 @@
 # Package Historic Laravel
 
-Historic
+Package Historic Laravel
 
 ## License
 
