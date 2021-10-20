@@ -17,7 +17,7 @@ class CreateHistoriesTable extends Migration
             $table->bigIncrements('id');
             $table->foreignId('user_id')->nullable()->constrained('users')->onUpdate('cascade')->onDelete('cascade');
             $table->nullableMorphs('historicable');
-            $table->text('text')->nullable();
+            $table->text('description')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

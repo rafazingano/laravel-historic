@@ -3,6 +3,7 @@
 namespace ConfrariaWeb\Historic\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Config;
 
 class Historic extends Model
 {
@@ -18,7 +19,7 @@ class Historic extends Model
 
     public function user()
     {
-        return $this->belongsTo('App\Models\User');
+        return $this->belongsTo(Config::get('cw_historic.models.user', 'App\Models\User'), 'user_id');
     }
 
 
